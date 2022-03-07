@@ -1,11 +1,11 @@
 import type { NextPage } from 'next';
 
 const Home: NextPage = () => {
-  const arr = [...new Array(10).keys()];
+  const arr = new Array(10);
   return (
     <div>
-      {arr.map(a => (
-        <div key={a}>
+      {arr.map((_, i) => (
+        <div key={i}>
           <h2>Some project name</h2>
           <p>College name</p>
           <p>some description</p>
