@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 
 const Home: NextPage = () => {
-  const arr = new Array(10);
+  const arr = new Array(10).fill(0);
   return (
     <div>
       {arr.map((_, i) => (
